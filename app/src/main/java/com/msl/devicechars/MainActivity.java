@@ -27,10 +27,9 @@ public class MainActivity extends Activity {
         float dpWidth  = outMetrics.widthPixels / density;
 
         TextView tv = (TextView) findViewById(R.id.width_dp);
-        tv.setText("Width: " + String.valueOf(dpWidth));
+        tv.setText("Width: " + String.valueOf(dpWidth) + "dp xDensity: " + getResources().getDisplayMetrics().xdpi);
         tv = (TextView) findViewById(R.id.height_dp);
-        tv.setText("Height: " + String.valueOf(dpHeight));
-
+        tv.setText("Height: " + String.valueOf(dpHeight) + "dp yDensity: " + getResources().getDisplayMetrics().ydpi);
 
     }
 
